@@ -1,0 +1,160 @@
+::placeholder {
+   color:#DBA9AD; 
+  }
+  * {
+    font-family: 'Josefin Sans';
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,300;1,300&family=Open+Sans:wght@500&display=swap');
+body {
+  background-color: #AA7BC3;
+  margin:0 auto;
+  overflow-y: hidden;
+}  
+header {
+  background-color: #531CB3;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+header > img {
+    height: 100px;
+    width: 190px;
+    display: flex;
+    align-items: center;
+
+}
+.container {
+    display: flex;
+    justify-content: center;
+    height:30vh;
+}
+.alignInputs {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content:space-around;
+  align-items: center;
+margin: 0 10% 0 10%;
+}
+.TaskBtn, #taskInput {
+  background-color: #531CB3;
+  border-radius: 18px;
+  border: none;
+}
+.TaskBtn {
+  width: 82px;
+  height: 65px;  
+  color:#DBA9AD;
+}
+.TaskBtn:hover {
+ background-color: #503a80;
+}
+.TaskBtn:active {
+  background-color: #280f5d;
+}
+#taskInput {
+width: 360px;
+height: 65px;
+color: #DBA9AD;
+padding-left: 10px;
+outline: none;
+
+}
+.hr {
+  width: 65%;
+}
+.overCingStruc {
+  height:500px;
+  width: 90%;
+  margin: 5% 5% 0% 5%;
+  display: flex;
+  justify-content: center;
+  background-color:#531CB3;
+  border-radius: 18px;
+
+}
+.alignData {
+ user-select: none;
+ overflow:overlay;
+
+}
+.alignData::after {
+  overflow-y: scroll;
+ }
+.alignData > p {
+  font-family: "Josefin Sans";
+  color: #DBA9AD;
+  font-weight: 400;
+}
+.alignData > div {
+  width: 100vh;
+  display: flex;
+  justify-content: center;
+ align-content: center; 
+ align-items: center;
+ align-content: center;
+ margin-top: 10px;
+}
+.alignData > div > button:nth-child(1) {
+  height: 65px; 
+  width: 90px;
+  border-radius: 15px;
+  background-color: rgb(62, 191, 62);
+  color: white;
+  font-weight: bold; 
+  border: none;
+  margin-right: 10px;
+}
+.alignData > div > button:nth-child(2) {
+  height: 65px; 
+  width: 80px;
+  border-radius: 15px;
+  background-color: rgb(191, 62, 62);
+  color: white;
+  font-weight: bold;
+  border: none;
+  margin-right: 10px;
+}
+.alignData > div > button:nth-child(1):hover {
+  background-color:rgb(75, 245, 75);
+}
+.alignData > div > button:nth-child(1):active{
+  background-color:rgb(44, 144, 44);
+}
+.alignData > div > button:nth-child(2):hover {
+  background-color:rgb(247, 82, 82);
+}
+.alignData > div > button:nth-child(2):active {
+  background-color:rgb(158, 47, 47);
+}
+.alignData > div > span {
+  display: flex;
+  justify-content: baseline;
+  padding-left: 10px;
+  align-items: center;
+  width: 385px;
+  height: 65px;
+  border-radius: 15px;
+  background-color: rgb(191, 103, 229);
+  color: white;
+  font-weight: bold;
+  border: none;
+
+}
+.AbsoluteRemove {
+  display: none !important;
+}
+.Completed {
+  background-color: rgb(25, 188, 47) !important; 
+}
+@media (min-width: 720px) {
+  .alignInputs {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+  }
+  #taskInput {
+    width: 400px;
+  }
+}
